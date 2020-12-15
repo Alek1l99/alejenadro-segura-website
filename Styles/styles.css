@@ -1,0 +1,10 @@
+body{
+    background-color: whitesmoke;
+}
+.bg{
+    color: blanchedalmond;
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

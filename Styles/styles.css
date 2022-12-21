@@ -1,10 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Sans+Pro:wght@700&display=swap');
+
 body{
-    background-color: whitesmoke;
+    margin: 0;
+    color: whitesmoke;
+    background-image: url(../assets/countdown_website_alek1l99.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.bg{
-    color: blanchedalmond;
-    background-color: gray;
+h1, p{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h2{
+    font-family: 'Press Start 2P', cursive;
+}
+.Principal-title{
+    font-size: 560%;
+    text-align: center;
+}
+.Secundary-Tititle{
+    margin: 0;
+    font-size: 750%;
+    text-align: center;
+}
+.Principal-text-paragraph{
+    font-size: 430%;
+    text-align: center;
+}
+.Secundary-text-paragraph{
+    margin: 1.6rem;
+    font-size: 150% ;
+    text-align: center;
+}
+.content{
     position: absolute;
-    bottom: 0;
-    right: 0;
+    margin: 0;
+    padding: 3.5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+    width: 93%;
 }
+.counter-container{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 4rem;   
+}
+footer{
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    justify-items: flex-end;
+    align-self: flex-end;
+    bottom: 0;
+}
+.version-container{
+    display: flex;
+    justify-content: center;
+    width: 6%;
+    height: 5%;
+    background-color: gray;
+    
+}
+#version{
+    margin: 0;
+    color: blanchedalmond;
+    font-size: 100%;
+}
+
+/* Estilos para pantallas de tamaño máximo de 768px (tamaño típico de tablets) */
+@media (max-width: 912px) {
+    body{
+        background-size: 267%;
+    }
+    .content {
+        width: 90%;
+        padding-top: 13% !important;
+        padding: 5vw;
+      }
+    /* Modificamos el tamaño de los títulos y párrafos para que se adapten mejor al tamaño de pantalla */
+    .Principal-title {
+      font-size: 350%;
+    }
+    .Secundary-Tititle {
+      font-size: 350%;
+    }
+    .Principal-text-paragraph {
+      font-size: 300%;
+      margin: 0 14% 0 12%;
+    }
+    .Secundary-text-paragraph {
+      font-size: 80%;
+    }
+    .counter-container {
+      margin: 2.6rem 0 2rem 0;
+      column-gap: 3.5rem;
+    }
+    .version-container{
+        width: 20%;
+    }
+    #version{
+        font-size: 73%;
+    }
+  }
+  
+  /* Estilos para pantallas de tamaño máximo de 425px (tamaño típico de smartphones en vertical) */
+  @media (max-width: 425px) {
+    body{
+        background-size: auto;
+    }
+    /* Modificamos el tamaño de los títulos y párrafos para que se adapten mejor al tamaño de pantalla */
+    .content {
+        width: 90%;
+        margin-top: 12%;
+        padding: 5vw;
+      }
+    .Principal-title {
+      font-size: 375%;
+    }
+    .Secundary-Tititle {
+      font-size: 305%;
+    }
+    .Principal-text-paragraph {
+      font-size: 312%;
+      margin: 0 14% 0 12%;
+    }
+    .Secundary-text-paragraph {
+      font-size: 75%;
+      margin: 2vw;
+    }
+    .counter-container {
+        margin: 3.6rem 0 3.7rem 0;
+      column-gap: 1.5rem;
+    }
+    .version-container{
+        width: 25%;
+    }
+  }
+  

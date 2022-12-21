@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Sans+Pro:wght@700&display=swap');
 
+
 body{
     margin: 0;
     color: whitesmoke;
@@ -73,9 +74,8 @@ footer{
     color: blanchedalmond;
     font-size: 100%;
 }
-
 /* Estilos para pantallas de tamaño máximo de 768px (tamaño típico de tablets) */
-@media (max-width: 912px) {
+@media only screen and (max-width: 912px) and (min-width: 640px) {
     body{
         background-size: 267%;
     }
@@ -111,25 +111,24 @@ footer{
   }
   
   /* Estilos para pantallas de tamaño máximo de 425px (tamaño típico de smartphones en vertical) */
-  @media (max-width: 425px) {
+  @media only screen and (max-width: 412px) {
     body{
         background-size: auto;
     }
     /* Modificamos el tamaño de los títulos y párrafos para que se adapten mejor al tamaño de pantalla */
     .content {
-        width: 90%;
-        margin-top: 12%;
-        padding: 5vw;
+        width: 96%;
+        padding: 2vw;
       }
     .Principal-title {
-      font-size: 375%;
+      font-size: 355%;
     }
     .Secundary-Tititle {
-      font-size: 305%;
+      font-size: 285%;
     }
     .Principal-text-paragraph {
-      font-size: 312%;
-      margin: 0 14% 0 12%;
+      font-size: 290%;
+      margin: 0 15% 0 15%;
     }
     .Secundary-text-paragraph {
       font-size: 75%;

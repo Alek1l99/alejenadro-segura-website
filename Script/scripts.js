@@ -1,4 +1,4 @@
-const numVersion = "Beta 0.0.02";
+const numVersion = "Beta 0.0.025";
 let version = (document.getElementById("version").innerHTML = numVersion);
 let Seconds = 812100;
 let count_down = document.getElementById("counter-container");
